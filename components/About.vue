@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="about portfolio-container">
     <div id="about" class="px-4">
-      <div class="section-title">About me</div>
+      <div class="section-title">About us</div>
       <div class="mb-6 text-center" data-aos="fade-up">
         <img class="me-img" src="@/assets/images/me.jpg" alt="ALT" />
       </div>
@@ -26,25 +26,25 @@
         </p>
       </div>
       <div data-aos="fade-up">
-        <Technologies />
+        <Partners />
       </div>
     </div>
   </v-container>
 </template>
 
 <script>
-import Technologies from '@/components/Technologies'
+import Partners from '~/components/Partners.vue'
 
 export default {
   components: {
-    Technologies
+    Partners
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .about {
-  color: white;
+  color: black;
 
   .content {
     padding: 0 3rem;

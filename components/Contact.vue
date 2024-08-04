@@ -44,10 +44,6 @@ export default {
   display: flex;
   flex-direction: column;
 
-  .copyright {
-    color: grey;
-  }
-
   .social-media {
     margin: 0 2rem;
 
@@ -57,7 +53,7 @@ export default {
       display: flex;
       padding: 1rem;
       text-decoration: none;
-      color: white;
+      color: black;
     }
 
     .card {
@@ -68,7 +64,7 @@ export default {
       font-size: 18px;
       font-weight: 500;
       border-radius: 10px;
-      border: 2px solid #ffffff;
+      border: 2px solid #000;
     }
   }
 

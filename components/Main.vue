@@ -2,9 +2,9 @@
   <v-container fluid>
     <Home />
     <About />
-    <Skills />
-    <Hireme />
     <Works />
+    <Hireme />
+    <Skills />
     <Contact />
   </v-container>
 </template>

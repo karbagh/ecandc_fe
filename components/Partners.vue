@@ -1,7 +1,7 @@
 <template>
   <div class="technologies">
     <div class="technologies-title d-flex justify-center align-center">
-      Technologies I <img class="heart" src="@/assets/images/heart.png" />
+      Our Partners
     </div>
     <carousel :autoplay="true" :nav="false" :loop="true" :items="1">
       <div
@@ -15,7 +15,7 @@
               <div class="tech">
                 <img
                   class="technologies-logo"
-                  :src="require(`@/assets/images/logos/${item.image}`)"
+                  :src="require(`@/assets/images/logos/partners/${item.image}`)"
                 />
                 <p>{{ item.name }}</p>
               </div>
@@ -53,7 +53,6 @@ export default {
     margin: 2rem;
   }
   .tech-card {
-    background: #131313;
     .tech {
       flex-direction: column;
       display: flex;

@@ -1,13 +1,13 @@
 <template>
   <v-container id="skills" fluid class="skills portfolio-container">
     <div>
-      <div class="section-title">What I do</div>
+      <div class="section-title">What we do</div>
       <v-row no-gutters class="px-5">
         <v-col class="text-center px-4" cols="12" sm="4">
           <img
             alt="frontend"
             class="skill-img"
-            src="@/assets/images/frontend.png"
+            src="@/assets/images/skills/construction.svg"
             data-aos="fade-up"
           />
           <div class="skill-title" data-aos="fade-up">Frontend</div>
@@ -20,7 +20,7 @@
           <img
             alt="backend"
             class="skill-img"
-            src="@/assets/images/backend.png"
+            src="@/assets/images/skills/sketch.svg"
             data-aos="fade-up"
           />
           <div class="skill-title" data-aos="fade-up">Backend</div>
@@ -33,7 +33,7 @@
           <img
             alt="mobileapp"
             class="skill-img"
-            src="@/assets/images/mobileapp.png"
+            src="@/assets/images/skills/dialogue.svg"
             data-aos="fade-up"
           />
           <div class="skill-title" data-aos="fade-up">Hybrid mobile app</div>
@@ -53,7 +53,6 @@ export default {}
 
 <style lang="scss" scoped>
 .skills {
-  color: white;
   margin-top: 3rem;
   .skill-title {
     font-size: 1.4375rem;
@@ -64,7 +63,6 @@ export default {}
     margin-bottom: 3.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #f5f5f7;
   }
   .skill-img {
     height: 7rem;
