@@ -1,29 +1,16 @@
 <template>
   <v-container fluid class="about portfolio-container">
     <div id="about" class="px-4">
-      <div class="section-title">About us</div>
+      <div class="section-title">{{ $t('about.title') }}</div>
       <div class="mb-6 text-center" data-aos="fade-up">
         <img class="me-img" src="@/assets/images/me.jpg" alt="ALT" />
       </div>
       <div class="quotes text-center mb-10" data-aos="fade-up">
-        <q>
-          If you are working on something exciting that you really care about,
-          you don't have to be pushed. The vision pulls you.
-        </q>
+        <q>{{ $t('about.quote') }}</q>
         <br />
       </div>
       <div class="content" data-aos="fade-up">
-        <p>
-          Hi, I'm a Full stack developer specialised in both frontend and
-          backend development for building complex and scalable web apps. I’ve
-          always sought out opportunities and challenges that are meaningful to
-          me. Over the past 3 years, I have collaborated with incredible teams
-          and involved in all stages of software development life cycle.
-        </p>
-        <p>
-          I also love to sketch and do crafts. These skills made me believe in
-          "A problem visualised is a problem halved."
-        </p>
+        <p>{{ $t('about.paragraph') }}</p>
       </div>
       <div data-aos="fade-up">
         <Partners />

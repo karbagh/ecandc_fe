@@ -1,7 +1,7 @@
 <template>
   <v-container id="skills" fluid class="skills portfolio-container">
     <div>
-      <div class="section-title">What we do</div>
+      <div class="section-title">{{ $t('skills.title') }}</div>
       <v-row no-gutters class="px-5">
         <v-col class="text-center px-4" cols="12" sm="4">
           <img
@@ -10,10 +10,11 @@
             src="@/assets/images/skills/construction.svg"
             data-aos="fade-up"
           />
-          <div class="skill-title" data-aos="fade-up">Frontend</div>
+          <div class="skill-title" data-aos="fade-up">
+            {{ $t('skills.construction.title') }}
+          </div>
           <div class="skill-description" data-aos="fade-up">
-            Build responsive and cross browser efficient websites by providing
-            seamless transition from design to development
+            {{ $t('skills.construction.description') }}
           </div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
@@ -23,10 +24,11 @@
             src="@/assets/images/skills/sketch.svg"
             data-aos="fade-up"
           />
-          <div class="skill-title" data-aos="fade-up">Backend</div>
+          <div class="skill-title" data-aos="fade-up">
+            {{ $t('skills.design.title') }}
+          </div>
           <div class="skill-description" data-aos="fade-up">
-            Maintaining servers including database administration as well as
-            scaling applications to handle load changes.
+            {{ $t('skills.construction.description') }}
           </div>
         </v-col>
         <v-col class="text-center px-4" cols="12" sm="4">
@@ -36,10 +38,11 @@
             src="@/assets/images/skills/dialogue.svg"
             data-aos="fade-up"
           />
-          <div class="skill-title" data-aos="fade-up">Hybrid mobile app</div>
+          <div class="skill-title" data-aos="fade-up">
+            {{ $t('skills.consultation.title') }}
+          </div>
           <div class="skill-description" data-aos="fade-up">
-            Build easily maintainable mobile apps that run on Android, IOS and
-            web with single code implementation.
+            {{ $t('skills.design.description') }}
           </div>
         </v-col>
       </v-row>

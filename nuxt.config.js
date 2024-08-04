@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import i18nConfigs from './assets/lang/i18n.config.js'
 
 export default {
   mode: 'spa',
@@ -113,8 +114,13 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@neneos/nuxt-animate.css',
-    'vue-scrollto/nuxt'
+    'vue-scrollto/nuxt',
+    '@nuxtjs/i18n'
   ],
+  /*
+   ** Translations configs
+   */
+  i18n: i18nConfigs,
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -127,8 +133,18 @@ export default {
   vuetify: {
     customVariables: ['~/assets/scss/main.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
+        light: {
+          primary: colors.blue.darken3,
+          accent: colors.grey.lighten3,
+          secondary: colors.amber.lighten3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+          background: '#232020'
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
@@ -144,7 +160,7 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'Kousika Ganesan'
+      name: 'EC & C'
     }
   },
   /*

@@ -3,12 +3,23 @@
     height="200"
     :src="require('@/assets/images/hire-me.jpg')"
     alt="Hire me"
+    class="my-5"
   >
     <div class="d-flex hire-me px-4 hire-me-content">
       <div class="content">
-        <div class="help" data-aos="fade-right">
-          We are open to collaborating for your upcoming projects!
-        </div>
+        <div class="help" data-aos="fade-right">{{ $t('hire.title') }}</div>
+        <v-btn
+          class="ma-2"
+          rounded
+          large
+          color="white"
+          elevation="0"
+          :href="mail"
+          target="_blank"
+          data-aos="fade-right"
+        >
+          {{ $t('hire.contact') }}
+        </v-btn>
       </div>
     </div>
   </v-parallax>
@@ -42,7 +53,7 @@ export default {
   .help {
     text-align: left;
     font-size: 1.5em;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
   }
 }
 

@@ -1,0 +1,49 @@
+{
+  "home": {
+    "search": {
+      "we": "We are",
+      "slogans": [
+        "Committed to Clean Energy",
+        "Redefining Power with Sustainability",
+        "Champions of Renewable Energy"
+      ]
+    }
+  },
+  "about": {
+    "title": "About us",
+    "quote": "If you are working on something exciting that you really care about, you don't have to be pushed. The vision pulls you.",
+    "paragraph": "Hi, I'm a Full stack developer specialised in both frontend and backend development for building complex and scalable web apps. I’ve always sought out opportunities and challenges that are meaningful to me. Over the past 3 years, I have collaborated with incredible teams and involved in all stages of software development life cycle.",
+    "partners": {
+      "title": "Our Partners"
+    }
+  },
+  "portfolio": {
+    "title": "Recent works",
+    "paragraph": "I have worked in 10+ projects in various Javascript technologies by collaborating with some incredible teams and also by independently handling project that involves agile methodology. All my works comes under Squashapps pvt ltd and hence the name cannot be revealed. So, here are my recent project's one liners and my contribution to the project.",
+    "project": {
+      "isConfidential": "This project comes under Squashapps pvt ltd and hence its name is confidential."
+    }
+  },
+  "hire": {
+    "title": "We are open to collaborating for your upcoming projects!",
+    "contact": "Contact Us"
+  },
+  "skills": {
+    "title": "What we do",
+    "construction": {
+      "title": "Construction",
+      "description": "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+    },
+    "design": {
+      "title":  "Design",
+      "description":  "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+    },
+    "consultation": {
+      "title":  "Consultation",
+      "description":  "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+    }
+  },
+  "contact": {
+    "copyright": "© 2020 EC & C"
+  }
+}

@@ -1,14 +1,8 @@
 <template>
   <v-container id="works" fluid class="works portfolio-container">
     <div class="px-4">
-      <div class="section-title">Recent works</div>
-      <div class="works-description">
-        I have worked in 10+ projects in various Javascript technologies by
-        collaborating with some incredible teams and also by independently
-        handling project that involves agile methodology. All my works comes
-        under Squashapps pvt ltd and hence the name cannot be revealed. So, here
-        are my recent project's one liners and my contribution to the project.
-      </div>
+      <div class="section-title">{{ $t('portfolio.title') }}</div>
+      <div class="works-description">{{ $t('portfolio.paragraph') }}</div>
       <v-row class="px-5">
         <v-col
           v-for="(project, index) in projects"
@@ -19,11 +13,6 @@
           <Project :project="project" />
         </v-col>
       </v-row>
-      <div class="text-center pa-4 ma-4">
-        <v-btn color="white" :href="moreProjects" target="_blank" outlined dark>
-          View more
-        </v-btn>
-      </div>
     </div>
   </v-container>
 </template>
@@ -38,8 +27,7 @@ export default {
   },
   data() {
     return {
-      projects: Constants.PROJECTS,
-      moreProjects: Constants.GITHUB_LINK
+      projects: Constants.PROJECTS
     }
   }
 }

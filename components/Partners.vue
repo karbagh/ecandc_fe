@@ -1,11 +1,11 @@
 <template>
   <div class="technologies">
-    <div class="technologies-title d-flex justify-center align-center">
-      Our Partners
+    <div class="technologies-title d-flex justify-center align-center my-3">
+      {{ $t('about.partners.title') }}
     </div>
     <carousel :autoplay="true" :nav="false" :loop="true" :items="1">
       <div
-        v-for="skill in skills"
+        v-for="skill in partners"
         :key="skill.name"
         src="@/assets/images/me.jpg"
       >
@@ -33,7 +33,7 @@ import Constants from '@/constants'
 export default {
   data() {
     return {
-      skills: Constants.SKILLS
+      partners: Constants.PARTNERS
     }
   }
 }
@@ -59,6 +59,7 @@ export default {
       align-items: center;
       background: #323030;
       border-radius: 4px;
+      color: white;
     }
   }
   .heart {

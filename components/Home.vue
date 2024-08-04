@@ -22,14 +22,11 @@
             :loop="true"
             :type-speed="35"
             :back-speed="35"
-            :strings="[
-              'Committed to Clean Energy',
-              'Redefining Power with Sustainability',
-              'Champions of Renewable Energy'
-            ]"
+            :strings="$t('home.search.slogans')"
           >
             <div class="sub-text">
-              <span>We are</span> <span class="typing font-weight-bold" />
+              <span>{{ $t('home.search.we') }}</span>
+              <span class="typing font-weight-bold" />
               <img
                 :src="require('@/assets/images/searchIcon.svg')"
                 alt="Search"
