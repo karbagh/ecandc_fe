@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'nuxt-app',
-      script: 'node_modules/.bin/nuxt',
+      name: 'ec-and-c',
+      script: './node_modules/.bin/nuxt',
       args: 'start',
       cwd: '/var/www/html/ecosystem', // Path to your application
       instances: 'max', // Or a specific number of instances
