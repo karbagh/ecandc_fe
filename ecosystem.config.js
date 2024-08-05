@@ -4,7 +4,7 @@ module.exports = {
       name: 'nuxt-app',
       script: 'node_modules/.bin/nuxt',
       args: 'start',
-      cwd: '/path/to/your/nuxt-app', // Path to your application
+      cwd: '/var/www/html/ecosystem', // Path to your application
       instances: 'max', // Or a specific number of instances
       exec_mode: 'cluster', // Enable clustering for better performance
       env: {
