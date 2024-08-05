@@ -5,13 +5,18 @@
     </div>
     <carousel :autoplay="true" :nav="false" :loop="true" :items="1">
       <div
-        v-for="skill in partners"
-        :key="skill.name"
+        v-for="partner in partners"
+        :key="partner.name"
         src="@/assets/images/me.jpg"
       >
         <v-card class="tech-card text--primary" flat>
           <v-row>
-            <v-col v-for="item in skill.items" :key="item.name" cols="6" md="4">
+            <v-col
+              v-for="item in partner.items"
+              :key="item.name"
+              cols="6"
+              md="4"
+            >
               <div class="tech">
                 <img
                   class="technologies-logo"
@@ -47,8 +52,8 @@ export default {
     margin-top: 3rem;
   }
   .technologies-logo {
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
     object-fit: contain;
     margin: 2rem;
   }

@@ -11,115 +11,24 @@ export default {
       name: 'set1',
       items: [
         {
-          name: 'Vue',
-          image: 'vue.png'
+          name: 'XD',
+          image: 'xd.png'
         },
         {
-          name: 'React',
-          image: 'react.svg'
+          name: 'Hven',
+          image: 'hven.png'
         },
         {
-          name: 'Angular',
-          image: 'angular.png'
+          name: 'Chint',
+          image: 'chint.png'
         },
         {
-          name: 'Ionic',
-          image: 'ionic.png'
+          name: 'Cneec',
+          image: 'cneec.png'
         },
         {
-          name: 'Redux',
-          image: 'redux.png'
-        },
-        {
-          name: 'Nuxt',
-          image: 'nuxt.svg'
-        }
-      ]
-    },
-    {
-      name: 'set2',
-      items: [
-        {
-          name: 'Vuetify',
-          image: 'vuetify.png'
-        },
-        {
-          name: 'Ant Design',
-          image: 'antdesign.svg'
-        },
-        {
-          name: 'React Material-UI',
-          image: 'reactmaterial.png'
-        },
-        {
-          name: 'Node',
-          image: 'nodejs.webp'
-        },
-        {
-          name: 'Mongo DB',
-          image: 'mongodb.png'
-        },
-        {
-          name: 'Nginx',
-          image: 'nginx.svg'
-        }
-      ]
-    },
-    {
-      name: 'set3',
-      items: [
-        {
-          name: 'React Native',
-          image: 'react.svg'
-        },
-        {
-          name: 'PM2',
-          image: 'pm2.png'
-        },
-        {
-          name: 'Wit.ai',
-          image: 'witai.png'
-        },
-        {
-          name: 'Typescript',
-          image: 'typescript.png'
-        },
-        {
-          name: 'Scss',
-          image: 'scss.png'
-        },
-        {
-          name: 'D3.js',
-          image: 'd3.png'
-        }
-      ]
-    },
-    {
-      name: 'set4',
-      items: [
-        {
-          name: 'Gitlab',
-          image: 'gitlab.png'
-        },
-        {
-          name: 'Github',
-          image: 'github.png'
-        },
-        {
-          name: 'Bitbucket',
-          image: 'bitbucket.svg'
-        },
-        {
-          name: 'Confluence',
-          image: 'confluence.png'
-        },
-        {
-          name: 'Jira',
-          image: 'jira.svg'
-        },
-        {
-          name: 'Trello',
-          image: 'trello.png'
+          name: 'Ena',
+          image: 'ena.png'
         }
       ]
     }
