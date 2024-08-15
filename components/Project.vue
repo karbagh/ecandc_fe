@@ -1,5 +1,5 @@
 <template>
-  <v-hover v-slot:default="{ hover }">
+  <v-hover>
     <v-card class="project" dark elevation="24" data-aos="fade-up">
       <v-img
         class="white--text align-end"
@@ -29,12 +29,14 @@
         </v-expand-transition>
       </v-img>
       <v-card-text class="text--white">
-        <h2 class="font-weight-black pb-2">{{ project.title }}</h2>
+        <h2 class="font-weight-black pb-2">
+          {{ $t(`projects.${project.title}`) }}
+        </h2>
         <div class="pb-2 tech-stack">{{ project.techStack.join(', ') }}</div>
       </v-card-text>
       <Dialog
         :cover="project.cover"
-        :description="project.description"
+        :description="$t(`projects.${project.description}`)"
         :title="project.title"
         :tech-stack="project.techStack"
         :is-confidential="project.isConfidential"

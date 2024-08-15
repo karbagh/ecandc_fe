@@ -1,0 +1,86 @@
+{
+  "home": {
+    "search": {
+      "we": "我们是",
+      "slogans": [
+        "致力于可靠的能源系统",
+        "以可持续性重新定义电力"
+      ]
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "paragraph": "我们是Energetic Objects，一家专注于作者和技术监督、以及涉及能源的所有问题的咨询的施工和重建设计公司。我们致力于提供创新和可持续的解决方案，优化能源效率，提升我们承接的每个项目的性能。",
+    "partners": {
+      "title": "我们的合作伙伴"
+    }
+  },
+  "portfolio": {
+    "title": "近期项目",
+    "paragraph": "我参与了10多个不同的JavaScript技术项目，与一些杰出的团队合作，并独立处理涉及敏捷方法的项目。所有我的工作均属于Squashapps私人有限公司，因此项目名称不能透露。以下是我近期项目的简介以及我在项目中的贡献。",
+    "project": {
+      "isConfidential": "该项目属于Squashapps私人有限公司，因此名称为机密。"
+    }
+  },
+  "hire": {
+    "title": "我们欢迎与您合作，参与即将到来的项目！",
+    "contact": "联系我们"
+  },
+  "skills": {
+    "title": "我们的服务",
+    "construction": {
+      "title": "施工",
+      "description": "建造高压、中压变电站，太阳能发电厂，以及列在此处的现有设施的重建。供应初级和次级设备、通信、消防/报警设备。"
+    },
+    "design": {
+      "title": "设计",
+      "description": "创建土木工程、能源、结构、火警、道路建设、SCADA系统、电气二次、通信设计"
+    },
+    "supervision": {
+      "title": "监督",
+      "description": "我们进行作者、技术、健康与安全、环境监督"
+    },
+    "consultation": {
+      "title": "咨询",
+      "description": "准备投标文件、分析和评估投标结果、准备最终合同。"
+    }
+  },
+  "partners": {
+    "arepso": "AREPSO CJSC",
+    "hven": "HVEN CJSC",
+    "ena": "ENA CJSC",
+    "xd": "XD EE LLC China",
+    "chint": "CHINT Group Co., Ltd",
+    "sifang": "SIFANG Automation Co., Ltd",
+    "cneec": "CNEEC Co., Ltd"
+  },
+  "contact": {
+    "copyright": "© 2016 EC & C Ltd"
+  },
+  "projects": {
+    "greenValleyResidentialComplex": {
+      "title": "绿色山谷住宅综合体",
+      "description": "设计和监督了一个可持续的住宅综合体的建设，配备了先进的节能系统，包括太阳能电池板和智能家居技术。这个项目展示了我们对环保设计的承诺。"
+    },
+    "cityCenterOfficeBuildingRenovation": {
+      "title": "市中心办公楼翻新",
+      "description": "管理了一座老化办公楼的重建，将其改造为最先进的节能工作空间。项目包括集成节能的HVAC系统和LED照明，显著减少了建筑的碳足迹。"
+    },
+    "energeticObjectsPortfolio": {
+      "title": "Energetic Objects 作品集",
+      "description": "开发并设计了我们公司作品集网站的初始版本，以展示我们在施工和重建项目中的工作。该网站突出了我们在可持续和节能设计方面的专业知识。"
+    },
+    "ecoFriendlyIndustrialPark": {
+      "title": "环保工业园区",
+      "description": "设计了一个注重可持续性和能源效率的工业园区。这个项目涉及使用先进的能源建模软件来优化整个园区的能源消耗，集成可再生能源和绿色建筑材料。"
+    },
+    "urbanHighRiseBuildingDesign": {
+      "title": "城市高层建筑设计",
+      "description": "设计了一座城市高层建筑，注重现代美学和能源效率。该项目采用了尖端材料和设计技术，以最小化环境影响，同时最大化结构完整性和居住舒适度。"
+    },
+    "smartCityInfrastructureProject": {
+      "title": "智能城市基础设施项目",
+      "description": "参与了智能城市基础设施项目的设计和技术监督。重点是集成节能技术和可持续城市规划，以创建一个面向未来的城市环境。"
+    }
+  }
+}

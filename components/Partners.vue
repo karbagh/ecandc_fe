@@ -21,8 +21,9 @@
                 <img
                   class="technologies-logo"
                   :src="require(`@/assets/images/logos/partners/${item.image}`)"
+                  :alt="$t(`partners.${item.name}`)"
                 />
-                <p>{{ item.name }}</p>
+                <p>{{ $t(`partners.${item.name}`) }}</p>
               </div>
             </v-col>
           </v-row>
@@ -51,12 +52,14 @@ export default {
     font-weight: bold;
     margin-top: 3rem;
   }
+
   .technologies-logo {
     height: 5rem;
     width: 5rem;
     object-fit: contain;
     margin: 2rem;
   }
+
   .tech-card {
     .tech {
       flex-direction: column;
@@ -67,6 +70,7 @@ export default {
       color: white;
     }
   }
+
   .heart {
     height: 2.4375rem;
   }

@@ -11,24 +11,37 @@ export default {
       name: 'set1',
       items: [
         {
-          name: 'XD',
+          name: 'xd',
           image: 'xd.png'
         },
         {
-          name: 'Hven',
+          name: 'hven',
           image: 'hven.png'
         },
         {
-          name: 'Chint',
+          name: 'chint',
           image: 'chint.png'
         },
         {
-          name: 'Cneec',
+          name: 'cneec',
           image: 'cneec.png'
         },
         {
-          name: 'Ena',
+          name: 'ena',
           image: 'ena.png'
+        },
+        {
+          name: 'sifang',
+          image: 'sifang.png'
+        }
+      ]
+    },
+    {
+      name: 'set2',
+      items: [
+        {
+          name: 'arepso',
+          image: 'arepso.png'
         }
       ]
     }
@@ -47,60 +60,49 @@ export default {
   HIRE_ME: 'mailto:g.kousika@gmail.com',
   PROJECTS: [
     {
-      title: 'COVID-19 Tracker',
+      title: 'greenValleyResidentialComplex.title',
       isConfidential: false,
-      techStack: ['React JS', 'Redux'],
-      cover: 'covid19.png',
-      description:
-        'A real time application to track the COVID-19 cases around the world. I designed and developed this application as an open source contribution',
-      url: 'https://github.com/kousikaganesan/covid-19-tracker'
+      techStack: ['AutoCAD', 'Revit', 'Energy Modeling Software'],
+      cover: 'me.jpg',
+      description: 'greenValleyResidentialComplex.description',
+      url: 'https://www.energeticobjects.com/green-valley-residential-complex'
     },
     {
-      title: 'Women Safety App',
-      techStack: ['React Native', 'Redux', 'Node JS', 'Mongo DB'],
+      title: 'cityCenterOfficeBuildingRenovation.title',
+      techStack: ['BIM 360', 'AutoCAD', 'LEED Certification Tools'],
       isConfidential: true,
-      description: `It is a React native app where I worked on designing
-      auth and navigation screens. Also, worked on the complete state
-      management of the auth flow and third party integrations to provide
-      real time live updates to the user.`,
-      cover: 'women-safety.jpeg'
+      description: 'cityCenterOfficeBuildingRenovation.description',
+      cover: 'me.jpg'
     },
     {
-      title: 'My Portfolio',
-      techStack: ['Nuxt JS'],
-      cover: 'portfolio-design.png',
-      description:
-        'This is the initial version of portfolio to display my work. Developed this project in a short span of time. I have planned to add more sections and micro interactions in the future',
+      title: 'energeticObjectsPortfolio.title',
+      techStack: ['Nuxt JS', 'Vue.js'],
+      cover: 'me.jpg',
+      description: 'energeticObjectsPortfolio.description',
       isConfidential: false,
-      url: 'https://github.com/kousikaganesan/nuxt-resume-template'
+      url: 'https://www.energeticobjects.com/portfolio'
     },
     {
-      title: 'A Productive App',
-      techStack: ['React Native', 'Redux', 'Node JS', 'Mongo DB'],
+      title: 'ecoFriendlyIndustrialPark.title',
+      techStack: ['Revit', 'SketchUp', 'EnergyPlus'],
       isConfidential: true,
-      description: `It is a web application built on React webpack which
-      syncs the Google and Microsoft calendar events. I worked on several parts
-      of the app including setting up the initial infrastructure to enable the
-      integration with third-party apps like MS Outlook
-      calendar, Google calendar, Google Drive, Gmail.etc. Also, worked on implementing
-      complex timeline-like feature on the react app. Handled all the integration
-      with the Redux store.`,
-      cover: 'notes.jpeg'
+      description: 'ecoFriendlyIndustrialPark.description',
+      cover: 'me.jpg'
     },
     {
-      title: 'Blog Site',
-      techStack: ['Angular', 'Node JS', 'Mongo DB'],
+      title: 'urbanHighRiseBuildingDesign.title',
+      techStack: ['AutoCAD', 'Rhino', 'Grasshopper'],
       isConfidential: false,
-      description: `The application was developed in a mission to develop an online publishing platform where users can post blogs, comments and like the posts with simple yet powerful UI`,
-      cover: 'blog.jpg',
-      url: 'https://github.com/kousikaganesan/blog-site'
+      description: 'urbanHighRiseBuildingDesign.description',
+      cover: 'me.jpg',
+      url: 'https://www.energeticobjects.com/urban-highrise'
     },
     {
-      title: 'Company’s Saas Product',
-      techStack: ['Vue', 'Vuex', 'Node JS', 'Mongo DB'],
+      title: 'smartCityInfrastructureProject.title',
+      techStack: ['GIS', 'BIM 360', 'Energy Modeling Tools'],
       isConfidential: true,
-      description: `Worked on setting up the initial infrastructure for the front end and backend project as well. This is a Saas app that my company is working on. The front end uses a combination of Vue + Vuex. This was a side project that I was working on top of the regular work hours and sometimes did full time as well.`,
-      cover: 'saas.jpg'
+      description: 'smartCityInfrastructureProject.description',
+      cover: 'me.jpg'
     }
   ]
 }

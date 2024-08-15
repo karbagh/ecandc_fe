@@ -3,11 +3,7 @@
     <div id="about" class="px-4">
       <div class="section-title">{{ $t('about.title') }}</div>
       <div class="mb-6 text-center" data-aos="fade-up">
-        <img class="me-img" src="@/assets/images/me.jpg" alt="ALT" />
-      </div>
-      <div class="quotes text-center mb-10" data-aos="fade-up">
-        <q>{{ $t('about.quote') }}</q>
-        <br />
+        <img class="me-img" src="@/assets/images/me.jpg" alt="About us" />
       </div>
       <div class="content" data-aos="fade-up">
         <p>{{ $t('about.paragraph') }}</p>

@@ -3,16 +3,14 @@
     "search": {
       "we": "We are",
       "slogans": [
-        "Committed to Clean Energy",
-        "Redefining Power with Sustainability",
-        "Champions of Renewable Energy"
+        "Committed to Reliable Energetic System",
+        "Redefining Power with Sustainability"
       ]
     }
   },
   "about": {
     "title": "About us",
-    "quote": "If you are working on something exciting that you really care about, you don't have to be pushed. The vision pulls you.",
-    "paragraph": "Hi, I'm a Full stack developer specialised in both frontend and backend development for building complex and scalable web apps. I’ve always sought out opportunities and challenges that are meaningful to me. Over the past 3 years, I have collaborated with incredible teams and involved in all stages of software development life cycle.",
+    "paragraph": "We are Energetic Objects, a construction and reconstruction design company specializing in author's and technical supervision, as well as consultation on all issues concerning energy. We are dedicated to delivering innovative and sustainable solutions that optimize energy efficiency and enhance the performance of every project we undertake.",
     "partners": {
       "title": "Our Partners"
     }
@@ -29,21 +27,60 @@
     "contact": "Contact Us"
   },
   "skills": {
-    "title": "What we do",
+    "title": "Service we perform",
     "construction": {
       "title": "Construction",
-      "description": "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+      "description": "Building high voltage, medium voltage substations, Solar Power Plants as well as reconstruction of existing ones listed here. Supply of primary and secondary, communication, fire fighting/alarm equipment."
     },
     "design": {
-      "title":  "Design",
-      "description":  "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+      "title": "Design",
+      "description": "Creating Civil, Energetic, Constructive, Fire Alarm, Road construction, SCADA system, Electrical secondary, Communication design"
+    },
+    "supervision": {
+      "title": "Supervision",
+      "description": "We perform Author's, Technical, Health & Safety, Environmental supervision"
     },
     "consultation": {
-      "title":  "Consultation",
-      "description":  "Build responsive and cross browser efficient websites by providing seamless transition from design to development"
+      "title": "Consultation",
+      "description": "Preparation of tender documentations, analysis and evaluation of tender results, preparation of the final contract."
     }
   },
+  "partners": {
+    "arepso": "AREPSO CJSC",
+    "hven": "HVEN CJSC",
+    "ena": "ENA CJSC",
+    "xd": "XD EE LLC China ",
+    "chint": "CHINT Group Co., Ltd",
+    "sifang": "SIFANG Automation Co., Ltd",
+    "cneec": "CNEEC Co., Ltd"
+  },
   "contact": {
-    "copyright": "© 2020 EC & C"
+    "copyright": "© 2016 EC & C Ltd"
+  },
+  "projects": {
+    "greenValleyResidentialComplex": {
+      "title": "Green Valley Residential Complex",
+      "description": "Designed and supervised the construction of a sustainable residential complex with advanced energy-efficient systems, including solar panels and smart home technology. This project showcased our commitment to eco-friendly design."
+    },
+    "cityCenterOfficeBuildingRenovation": {
+      "title": "City Center Office Building Renovation",
+      "description": "Managed the reconstruction of an aging office building, transforming it into a state-of-the-art, energy-efficient workspace. The project included the integration of energy-saving HVAC systems and LED lighting, significantly reducing the building's carbon footprint."
+    },
+    "energeticObjectsPortfolio": {
+      "title": "Energetic Objects Portfolio",
+      "description": "Developed and designed the initial version of our company portfolio website to showcase our work in construction and reconstruction projects. The website highlights our expertise in sustainable and energy-efficient design."
+    },
+    "ecoFriendlyIndustrialPark": {
+      "title": "Eco-Friendly Industrial Park",
+      "description": "Designed an industrial park focusing on sustainability and energy efficiency. This project involved the use of advanced energy modeling software to optimize the energy consumption of the entire park, integrating renewable energy sources and green building materials."
+    },
+    "urbanHighRiseBuildingDesign": {
+      "title": "Urban High-Rise Building Design",
+      "description": "Designed an urban high-rise building with a focus on modern aesthetics and energy efficiency. The project incorporated cutting-edge materials and design techniques to minimize environmental impact while maximizing structural integrity and occupant comfort."
+    },
+    "smartCityInfrastructureProject": {
+      "title": "Smart City Infrastructure Project",
+      "description": "Contributed to the design and technical supervision of a smart city infrastructure project. The focus was on integrating energy-efficient technologies and sustainable urban planning to create a future-ready urban environment."
+    }
   }
 }

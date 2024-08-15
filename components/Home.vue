@@ -71,10 +71,14 @@ export default {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 7rem;
+    height: 11rem;
+    @media screen and (max-width: 767px) {
+      height: 5.58rem;
+    }
   }
 
   .company-logo {
-    max-height: 11rem;
+    max-height: 100%;
   }
 
   .scroll-gif {
@@ -111,6 +115,9 @@ export default {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    @media screen and (max-width: 767px) {
+      font-size: 0.58rem;
+    }
   }
 
   .banner-wrapper {

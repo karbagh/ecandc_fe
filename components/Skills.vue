@@ -3,7 +3,7 @@
     <div>
       <div class="section-title">{{ $t('skills.title') }}</div>
       <v-row no-gutters class="px-5">
-        <v-col class="text-center px-4" cols="12" sm="4">
+        <v-col class="text-center px-4" cols="12" sm="3">
           <img
             alt="frontend"
             class="skill-img"
@@ -17,7 +17,7 @@
             {{ $t('skills.construction.description') }}
           </div>
         </v-col>
-        <v-col class="text-center px-4" cols="12" sm="4">
+        <v-col class="text-center px-4" cols="12" sm="3">
           <img
             alt="backend"
             class="skill-img"
@@ -31,7 +31,21 @@
             {{ $t('skills.construction.description') }}
           </div>
         </v-col>
-        <v-col class="text-center px-4" cols="12" sm="4">
+        <v-col class="text-center px-4" cols="12" sm="3">
+          <img
+            alt="backend"
+            class="skill-img"
+            src="@/assets/images/skills/sketch.svg"
+            data-aos="fade-up"
+          />
+          <div class="skill-title" data-aos="fade-up">
+            {{ $t('skills.supervision.title') }}
+          </div>
+          <div class="skill-description" data-aos="fade-up">
+            {{ $t('skills.supervision.description') }}
+          </div>
+        </v-col>
+        <v-col class="text-center px-4" cols="12" sm="3">
           <img
             alt="mobileapp"
             class="skill-img"
