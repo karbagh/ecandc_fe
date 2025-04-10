@@ -3,10 +3,10 @@ name: CI/CD Pipeline for Nuxt.js
 on:
   push:
     branches:
-      - main  # Trigger deployment on push to main branch
+      - master  # Trigger deployment on push to main branch
   pull_request:
     branches:
-      - main  # Optionally trigger CI on pull request to main
+      - master # Optionally trigger CI on pull request to main
 
 jobs:
   build:
