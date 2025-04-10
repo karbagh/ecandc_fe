@@ -39,9 +39,6 @@ jobs:
       - name: Build Nuxt.js app for production
         run: yarn run build
 
-      - name: Prepare production files
-        run: yarn prod
-
       - name: Debug runner environment
         run: |
           echo "Runner version: $RUNNER_VERSION"
