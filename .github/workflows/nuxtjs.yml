@@ -22,6 +22,9 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Install Yarn
+        run: npm install -g yarn
+
       - name: Cache Yarn dependencies
         uses: actions/cache@v3
         with:
@@ -69,7 +72,7 @@ jobs:
       - name: Download production artifacts
         uses: actions/download-artifact@v4
         with:
-          name: nuxt-dist
+          name: nuxt your-dist
           path: dist/
 
       - name: Deploy to server via SSH
