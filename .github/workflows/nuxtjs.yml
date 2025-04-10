@@ -22,13 +22,13 @@ jobs:
           node-version: '16'  # Change the version based on your project needs
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build Nuxt.js app
-        run: npm run build
+        run: yarn build
 
       - name: Run tests (optional)
-        run: npm run prod
+        run: yarn prod
 
   deploy:
     runs-on: ecandc
