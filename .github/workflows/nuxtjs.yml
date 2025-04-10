@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'  # Updated to Node 18
 
       - name: Install Yarn
         run: npm install -g yarn
@@ -72,7 +72,7 @@ jobs:
       - name: Download production artifacts
         uses: actions/download-artifact@v4
         with:
-          name: nuxt your-dist
+          name: nuxt-dist  # Fixed typo from previous version
           path: dist/
 
       - name: Deploy to server via SSH
