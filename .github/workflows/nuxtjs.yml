@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Run tests (optional)
-        run: npm run test  # Only if you have tests
+        run: npm run prod
 
   deploy:
     runs-on: ecandc
