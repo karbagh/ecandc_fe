@@ -1,0 +1,58 @@
+name: CI/CD Pipeline for Nuxt.js
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to main branch
+  pull_request:
+    branches:
+      - main  # Optionally trigger CI on pull request to main
+
+jobs:
+  build:
+    runs-on: ecandc
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Change the version based on your project needs
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Nuxt.js app
+        run: npm run build
+
+      - name: Run tests (optional)
+        run: npm run test  # Only if you have tests
+
+  deploy:
+    runs-on: ecandc
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.SERVER_HOST }}  # Add your server host to GitHub Secrets
+          username: ${{ secrets.SERVER_USER }}  # Add your server username to GitHub Secrets
+          key: ${{ secrets.SSH_PRIVATE_KEY }}  # Add your SSH private key to GitHub Secrets
+          port: 22
+          script: |
+            # Navigate to the server's deployment directory
+            cd /var/www/nuxt-app
+            # Pull latest changes
+            git pull origin main
+            # Install dependencies
+            npm install
+            # Build Nuxt.js project
+            npm run build
+            # Restart the app server (or run Nuxt in production mode)
+            pm2 restart nuxt-app || pm2 start npm --name nuxt-app -- run start
