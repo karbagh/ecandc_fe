@@ -3,25 +3,27 @@ name: CI/CD Pipeline for Nuxt.js with Yarn
 on:
   push:
     branches:
-      - master  # Trigger on push to master branch
+      - master
   pull_request:
     branches:
-      - master  # Trigger on pull requests to master (optional)
+      - master
 
 jobs:
   build:
-    runs-on: ecandc
+    runs-on: [ecandc]  # Explicitly specify your self-hosted runner label
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Updated to v3 for better reliability
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1  # Shallow clone for speed
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3  # Updated to v3
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Adjust based on your Nuxt.js requirements
+          node-version: '16'
 
       - name: Cache Yarn dependencies
-        uses: actions/cache@v3  # Updated to v3
+        uses: actions/cache@v3
         with:
           path: ~/.yarn/cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
@@ -29,29 +31,30 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies with Yarn
-        run: yarn install --frozen-lockfile  # Ensures consistent installs
+        run: yarn install --frozen-lockfile
 
       - name: Build Nuxt.js app for production
-        run: yarn run build  # Builds for production; adjust if your script differs
+        run: yarn run build
 
       - name: Prepare production files
         run: |
           mkdir -p dist
-          cp -r .nuxt dist/.nuxt  # Copy Nuxt build files
-          cp -r static dist/static  # Copy static assets
-          cp package.json dist/  # Include package.json for production
-          cp yarn.lock dist/  # Include yarn.lock for dependency consistency
+          cp -r .nuxt dist/.nuxt
+          cp -r static dist/static
+          cp package.json dist/
+          cp yarn.lock dist/
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
           name: nuxt-dist
           path: dist/
+          retention-days: 1  # Short retention since it’s just for deploy
 
   deploy:
-    runs-on: ecandc
-    needs: build  # Depends on successful build job
-    if: github.event_name == 'push'  # Only run deploy on push, not PRs
+    runs-on: [ecandc]
+    needs: build
+    if: github.event_name == 'push'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -63,20 +66,15 @@ jobs:
           path: dist/
 
       - name: Deploy to server via SSH
-        uses: appleboy/ssh-action@v1.0.0  # Updated to latest version
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            # Navigate to deployment directory
             cd /var/www/nuxt-app || exit
-            # Ensure directory is clean
             rm -rf dist || true
             mkdir -p dist
-            # Move built files (assuming runner uploads them)
-            # Note: Adjust this if you use rsync or another method
             yarn install --frozen-lockfile --production || exit
-            # Restart or start the app with pm2
             pm2 restart nuxt-app || pm2 start yarn --name nuxt-app -- run start
