@@ -40,12 +40,7 @@ jobs:
         run: yarn run build
 
       - name: Prepare production files
-        run: |
-          mkdir -p dist
-          cp -r .nuxt dist/.nuxt
-          cp -r static dist/static
-          cp package.json dist/
-          cp yarn.lock dist/
+        run: yarn prod
 
       - name: Debug runner environment
         run: |
