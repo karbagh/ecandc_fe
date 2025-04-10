@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: [ecandc]  # Explicitly specify your self-hosted runner label
+    runs-on: ecandc
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -52,7 +52,7 @@ jobs:
           retention-days: 1  # Short retention since it’s just for deploy
 
   deploy:
-    runs-on: [ecandc]
+    runs-on: ecandc
     needs: build
     if: github.event_name == 'push'
     steps:
